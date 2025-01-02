@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&amp;family=Inter:wght@100;200;300;400;500;600;700&amp;family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,500;1,600&amp;family=Nunito:wght@200;300;400;500;600;700&amp;family=Roboto:wght@100;300;400;500;700&amp;display=swap');
+
+
+*{
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+}
+body.body{
+    background-image: none;
+    background-color: #ffffff;
+}
+.header{
+    width: 100%;
+    background: url(image/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+nav.nav{
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+nav ul li{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.5px;  
+}
+nav.nav h1{
+    font-size: 20px;
+    font-weight: 800px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24.6px;
+    color: #0052FF;
+}
+nav ul li button{
+    width:150px ;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #0052FF;
+    color: #fff;
+}
+nav{
+    width: 100vw;
+    /* height: 50px; */
+    /* background-color: transparent; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding:2vw 3vw ;
+    transition: .5s ease;
+    position: fixed;
+}
+.body_scroll nav{
+    background-color: #fff;
+}
+nav button{
+    width: 130px;
+    height: 48px;
+    border: 30px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: #78B0EF;
+    font-size: 13px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 19.5px;
+    transition: .5s ease;
+}
+.body_scroll nav button:hover,
+nav button:hover{
+    background-color: #212529;
+    color: #fff;
+} 
+.body_scroll nav button{
+    background-color: #78B0EF;
+    color: #fff;
+}
+header{
+    margin-top: calc(5vw + 50px);
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+header .write{
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+header .write h1{
+    font-size: 50px;
+    font-weight: 600px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 67.6px;
+    color: #444444;
+}
+
+header .write p{
+    font-size: 18px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 31.6px;
+    color: #444444;
+}
+
+header img{
+    width:400px;
+    height: 400px;
+}
+
+.header::after{
+    background: url(image/home.jpg);
+    position: absolute;
+    top:calc( 610px - 800px);
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-position: right;
+    z-index: -2;
+    left: 1050px;
+    content: "";
+}
+
+.header::before{
+    background-color: #88baf372;
+    position: absolute;
+    top:calc( 610px - 800px);
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-position: right;
+    z-index: -1;
+    left: 1050px;
+    content: "";
+}
+
+
+.payments{
+    width: 95vw;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payments .pay{
+    width: 30%;
+    padding: 58px 30px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px #a2a2a27d;
+    border-top: 4px solid #47B2E4;
+}
+
+.payments .pay h1{
+    font-size: 20px;
+    font-weight: 600px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 31.6px;
+    color: #37517E;
+}
+
+.payments .pay p{
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #212529;
+}
+
+.payments .pay button{
+    width: 162px;
+    height: 50px;
+    background-color: #47B2E4;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+
+footer{
+    width: 100%;
+    margin-top: 5vw;
+    background-color: #fff;
+    padding: 10vw 10vw 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer ul{
+    display: flex;
+    gap: 15px;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 21.6px;
+    color: #757575;
+}
+
+
+
+
+.into{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     padding: 5vw 5vw 3vw 5vw;
+}
+
+.into h1{
+    font-size: 48px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 57.6px;
+    color: #757575;
+}
+.into p{
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #757575;
+}
+
+.into input{
+    background-color: #fff;
+    width:348px;
+    height: 36px;
+    border:1px solid #ced4da ;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 21.6px;
+    color: #757575;
+    border-radius: 4px;
+}
+
+.wallets{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3vw 5vw;
+    gap: 50px;
+}
+.wallets p{
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #323C53;
+}
+
+.wallets_list{
+    display: grid;
+    width: 100%;
+    max-width: 900px;
+    align-self: flex-end;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.wallets_list li{
+   width: 100%;
+   height: 150px;
+   display: flex;flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   background-color: #fff;
+   border-radius: 10px;
+   cursor: pointer;
+   box-shadow: 0px 0px 15px 0px #a2a2a252;
+}
+
+.wallets_list li img{
+    height: 60px;
+    pointer-events: none;
+    width: auto;
+    max-width: 100px;
+}
+.wallets_list li p{
+    font-size: 13px;
+    pointer-events: none;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 19.6px;
+    color: #323C53;
+    text-transform: capitalize;
+}
+.wallets_list li h1{
+    pointer-events: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 19.6px;
+    color: #40DD67;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.wallets_list li h1 img{
+    width: 20px;
+    height: 20px;
+}
+
+.conecting{
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    background-color: #2125291e;
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conecting div.cont{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   padding:30px 40px;
+   background-color: #fff;
+   border-radius: 10px;
+}
+.conecting div span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.conecting div span img{
+    width: 18px;
+    height: 18px;
+}
+.conecting div h1{
+    font-size: 22px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 22.6px;
+    color: #000;
+    text-align: center;
+}
+.conecting div span h1{
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #323C53;
+    text-align: center;
+}
+
+
+.conecting div p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    text-transform: capitalize;
+    color: #323C53;
+}
+.conecting div button ,
+.conecting div a{
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+}
+
+.conecting div a{
+    background-color: #1026e8;
+    color: #fff;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-self: center;
+    padding:10vw 10px;
+    align-self: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.form h1{
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #000;
+    text-transform: capitalize;
+}
+.form form img{
+    width: 15vw;
+    max-width: 100px;
+    align-self: center;
+}
+.form div{
+   width: 100%;
+   justify-content: space-between;
+   align-content: center;
+   display: flex;
+}
+.form div button{
+    cursor: pointer;
+    width: 32%;
+    height:39px;
+    border-radius: 8px;
+    border: 1px solid #DEE2E6;
+    font-size: 14px;
+    font-weight: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 21.6px;
+    color: #000;
+    background-color: transparent;
+}
+
+.form div button.active{
+    border: 1px solid #0052FF;
+    color: #0052FF;
+}
+
+.form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px #0000001d;
+}
+.form form h1{
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #212529;
+
+}
+.form form p{
+    font-size: 12.8px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 19.6px;
+    color: #323C53;
+}
+
+.form form textarea{
+    width: 100%;
+    height: 132px;
+    border:1px solid #CED4DA;
+    font-size: 18.8px;
+    padding: 10px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 19.6px;
+    color: #323C53;
+}
+.form form input{
+    width: 100%;
+    height: 40px;
+    border:1px solid #CED4DA;
+    font-size: 18.8px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 19.6px;
+    color: #323C53;
+    padding: 10px;
+}
+.form form button{
+     background-color: #017DD5; 
+     height:48px;
+     width: 48%;
+     border-radius: 40px;
+     font-size: 16.8px;
+     font-weight: 400px;
+     font-family: 'Roboto', sans-serif;
+     line-height: 24.6px;
+     color: #fff;
+}
+
+.form form a{
+     height:48px;
+     width: 48%;
+     border-radius: 40px;
+     font-size: 16.8px;
+     font-weight: 400px;
+     font-family: 'Roboto', sans-serif;
+     line-height: 24.6px;
+     color: #212529;
+     border: 1px solid #DEE2E6;
+     border-radius: 4px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+
+form span{
+    width: 100%;
+    border: 2px solid #DEE2E6;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-left:10px solid #DEE2E6;
+}
+form span b{
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #212529;
+}
+form span p{
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #212529;
+}
+
+.particles-js{
+    width: 100%;
+    max-width: 950px;
+    height:100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    left: 0;
+    /* background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1),rgba(0,0,0,0.1)); */
+}
+@media screen and (max-width : 1100px) {
+    nav.nav ul{
+        display: none;
+    }
+    nav div{
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    nav hr{
+        height: 3px;
+        width: 100%;
+        background-color: #212529;
+    }
+    nav hr:last-child{
+        width: 75%;
+    }
+header .write{
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+header .write h1{
+    font-size: 30px;
+    font-weight: 600px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 67.6px;
+    color: #444444;
+}
+
+header .write p{
+    font-size: 18px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 31.6px;
+    color: #444444;
+}
+
+header img{
+    display: none;
+}
+.wallets_list{
+    display: grid;
+    width: 100%;
+    max-width: 750px;
+    align-self: flex-end;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+}
+
+@media screen and (max-width : 900px) {
+
+
+    header{
+        height: 500px;
+    }    
+header .write{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+header .write h1{
+    font-size: 40px;
+    font-weight: 600px;
+    font-family: 'Montserrat', sans-serif;
+    line-height:47.6px;
+    color: #444444;
+}
+
+header .write p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 21.6px;
+    color: #444444;
+}
+
+header img{
+    display: none;
+}
+
+
+.payments{
+    width: 95vw;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.payments .pay{
+    width: 90%;
+    padding: 58px 30px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px #a2a2a27d;
+    border-top: 4px solid #47B2E4;
+}
+
+.payments .pay h1{
+    font-size: 20px;
+    font-weight: 600px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 31.6px;
+    color: #37517E;
+}
+
+.payments .pay p{
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #212529;
+}
+
+.payments .pay button{
+    width: 162px;
+    height: 50px;
+    background-color: #47B2E4;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24.6px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.into{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+    padding: 15vw 3vw 10vw 3vw;
+}
+.into input{
+    width: 100%;
+    max-width: 350px;
+}
+.wallets{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3vw 3vw;
+    gap: 50px;
+}
+.wallets_list{
+    display: grid;
+    width: 100%;
+    max-width: 900px;
+    align-self: flex-end;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+}
+
+footer{
+    width: 100%;
+    margin-top: 5vw;
+    background-color: #fff;
+    padding: 10vw 10vw 3vw 10vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    gap: 15px;
+    /* justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center; */
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 21.6px;
+    color: #757575;
+}
+
+
+}
+form.hid,
+li.hid,
+.conecting div.hid,
+.hid{
+    display: none;
+}
+
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #0c8e17;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+  
